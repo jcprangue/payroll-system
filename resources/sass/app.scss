@@ -1,0 +1,112 @@
+.pac-target-input{
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom:0.75rem;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
+.bg-white{
+    background-color: #fff !important;
+}
+.border {
+    border:1px solid #E0E0E0 !important;
+}
+.border-t {
+    border-top-width: 1px;
+    border-top-style: solid !important;
+    border-color: #E0E0E0 !important;
+}
+.border-b {
+    border-bottom-width: 1px;
+    border-bottom-style: solid !important;
+    border-color: #E0E0E0 !important;
+}
+.border-l {
+    border-left-width: 1px;
+    border-left-style: solid !important;
+    border-color: #E0E0E0 !important;
+}
+.border-r {
+    border-right-width: 1px;
+    border-right-style: solid !important;
+    border-color: #E0E0E0 !important;
+}
+
+ul.link-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px !important;
+    margin: 0px !important;
+    li {
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        a {
+            color: #757575;
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: inline-block;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1.5px;
+                background: #757575;
+                transition: width .3s;
+                margin-bottom: 2px;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+ul.link-list-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px !important;
+    margin: 0px !important;
+    li {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+        display: flex;
+        align-items: center;
+        font-size: 0.80rem;
+
+        &.link {
+            position: relative;
+            text-align: center;
+            &:not(:last-child)::before {
+                position: absolute;
+                content: "|";
+                right:0;
+                color: #E0E0E0;
+            }
+            a {
+                text-align: center;
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
+                text-decoration: none;
+                color: #757575;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 1.5px;
+                    background: #757575;
+                    transition: width .3s;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
